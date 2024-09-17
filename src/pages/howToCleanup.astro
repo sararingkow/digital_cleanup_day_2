@@ -1,6 +1,11 @@
 ---
 import HowToLayout from "../layouts/HowToLayout.astro";
 import Button_readmore from "../components/Button_readmore.astro";
+import { Image } from "astro:assets";
+import phone from "../assets/howto_illustrations/phone_final.svg";
+import mail from "../assets/howto_illustrations/envelope.svg";
+import computer from "../assets/howto_illustrations/harddrive.svg";
+import papers from "../assets/howto_illustrations/paper_stack.svg";
 ---
 
 <HowToLayout title="Sådan laver du en digital oprydning">
@@ -8,11 +13,12 @@ import Button_readmore from "../components/Button_readmore.astro";
     <h1 class="text-dark-green">Sådan laver du en digital oprydning</h1>
     <h2 class="text-off-white text-3xl">Step by step</h2>
   </div>
-  <div class="text_container text-dark-green grid grid-cols-1 md:grid-cols-2 mt-8">
+  <div class="text_container text-dark-green grid grid-cols-1 md:grid-cols-2 mx-auto mt-16 max-w-7xl">
     <div class="col_1 mx-16 mb-10">
       <h2 class="text-xl">STEP 1</h2>
-      <h3 class="text-lg">Ryd op i din telefon</h3>
-      <p class="text-md">
+      <h3 class="text-lg pb-2">Ryd op i din telefon</h3>
+      <Image src={phone} alt="" width={80} height={80} />
+      <p class="text-md pt-4">
         Fjern alle de apps, du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte,
         gamle apps ...
       </p>
@@ -21,8 +27,9 @@ import Button_readmore from "../components/Button_readmore.astro";
     </div>
     <div class="col_2 mx-16 mb-10">
       <h2 class="text-xl">STEP 2</h2>
-      <h3 class="text-lg">Ryd op i din mail-indbakke</h3>
-      <p class="text-md">
+      <h3 class="text-lg pb-">Ryd op i din mail-indbakke</h3>
+      <Image src={mail} alt="" width={80} height={80} />
+      <p class="text-md pt-4">
         Filtrér dine e-mails efter de ældste og arkivér dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste, og
         slet alt det andet! ...
       </p>
@@ -31,8 +38,9 @@ import Button_readmore from "../components/Button_readmore.astro";
     </div>
     <div class="col_3 mx-16 mb-10">
       <h2 class="text-xl">STEP 3</h2>
-      <h3 class="text-lg">Ryd op i din computers harddrive</h3>
-      <p class="text-md">
+      <h3 class="text-lg pb-4">Ryd op i din computers harddrive</h3>
+      <Image src={computer} alt="" width={80} height={80} />
+      <p class="text-md pt-4">
         Ryd op på din personlige computer og slet filer, der er dubletter eller er blevet overflødige. Gennemgå alle dine billeder og slet dubletter
         og slørede billeder ...
       </p>
@@ -41,8 +49,9 @@ import Button_readmore from "../components/Button_readmore.astro";
     </div>
     <div class="col_4 mx-16">
       <h2 class="text-xl">STEP 4</h2>
-      <h3 class="text-lg">Ændr dine vaner</h3>
-      <p class="text-md">
+      <h3 class="text-lg pb-2">Ændr dine vaner</h3>
+      <Image src={papers} alt="" width={80} height={80} />
+      <p class="text-md pt-4">
         I stedet for at sende e-mails, brug flere co-working-steder. Stop med at sende ‘ok’ og ‘tak’ e-mails! Opbevar de vigtige filer ét sted i skyen
         ...
       </p>
