@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-
+@layer base {
+  h1 {
+    font-family: "Jersey 25", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+  }
 }
