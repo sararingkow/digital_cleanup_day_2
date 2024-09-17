@@ -1,5 +1,32 @@
 ---
+
 ---
-<div>
-Header - tilføj navigation mm.
+
+<div x-data="{ showmenu: false }" class="p-4 fixed lg:fixed w-full bg-light-green">
+  <div id="navbar" class="flex flex-row justify-between items-center">
+    <div class="flex flex-row items-center gap-10">
+      <div id="logo">
+        <a href="/#"><img src="src/assets/index_illustrations/logo.svg" class="w-[90px] md:w-[170px]" alt="pic1" /></a>
+      </div>
+      <nav id="desktopmenu" class="hidden lg:flex gap-10 text-white text-menu">
+        <a href="/#" class="hover:underline hover:text-light-yellow">Forside</a>
+        <a href="howToCleanup" class="hover:underline hover:text-light-yellow">Sådan gør du</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <button id="desktop-button" class="hidden lg:block">Knap her</button>
+      <button id="burgermenu" class="lg:hidden text-white" x-on:click="showmenu = ! showmenu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobilmenu" class="flex flex-col pb-20 content-center text-white text-menu" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+    <ul>
+      <li class="text-center py-2 border-b-2 hover:text-light-yellow"><a href="/#">Forside</a></li>
+      <li class="text-center py-2 border-b-2 hover:text-light-yellow"><a href="howToCleanup">Sådan gør du</a></li>
+    </ul>
+  </nav>
 </div>
