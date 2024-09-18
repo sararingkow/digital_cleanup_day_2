@@ -9,9 +9,38 @@ import Button from "../components/Button.astro";
 
 <MainLayout title="Forside">
   <section class="bg-dark-green text-white pt-16 pb-16 md:px-32">
-	<h2 class="text-h3_m md:text-h3">Vidste du?</h2>
-	<div class="border-2 border-light-yellow">
-	<p>Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</p>
+	<h2 class="pb-8 text-h3_m md:text-h3">Vidste du?</h2>
+	<!-- Desktop grid -->
+<div class="hidden md:grid grid-cols-5 grid-rows-3 gap-4">
+	<div class="border-2 border-light-yellow">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</div>
+	<div class="border-2 border-white">I 2022 blev omkring 70 millioner servere brugt til at 
+		lagre data. Hver enkelt forårsagede produktionen af 
+		1-2 tons CO2. I det år blev omkring 20 millioner af 
+		dem til elektronisk affald. (a)</div>
+	<div class="border-2 border-light-yellow">Internettet producerer mere 
+		end 900 millioner tons CO2 hvert år! (a), (b), (c), (d)</div>
+	<div class="border-2 border-white">Den grænseløse forbrug af data i dag 
+		kræver 3 gange mere energi end alle de solpaneler, verden kan producere! (a)</div>
+	<div class="border-2 border-white">99 % af al data blev skabt inden for de sidste 10 år. (a)</div>
+	<div class="border-2 border-light-yellow">91 % af websider får ingen trafik fra Google. (a)</div>
+	<div class="border-2 border-white">På blot ét år (2007) blev der skabt én zettabyte data verden over. I 2010 var 
+		dette tal fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at 
+		printe én zettabyte data ville man have brug for papir fra 20 billioner træer. 
+		Der er kun omkring 3,5 billioner træer tilbage på planeten, så det er ikke 
+		muligt. (a), (b)</div>
+	<div class="border-2 border-light-yellow">90 % af alle data bliver aldrig tilgået 3 måneder
+		efter, at de er blevet lagret. (a)</div>
+	<div class="border-2 border-white">En e-mail udleder i gennemsnit 4 g CO2 = det samme som kulstofaftrykket fra en lyspære tændt i 6 
+		minutter! (a), (b), (c)</div>
+	<div class="border-2 border-light-yellow">320 milliarder e-mails sendes hver dag, og 62 billioner spam-mails sendes 
+		hvert år = 20 millioner tons CO2! (a), (b)</div>
+  </div>
+  
+  <!-- Mobile carousel -->
+  <div class="md:hidden">
+	  <div class="border-2 border-light-yellow">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</div>
+  </div>
+  
 </div>
   </section>
 
@@ -50,4 +79,3 @@ import Button from "../components/Button.astro";
   </section>
 
 </MainLayout>
-
