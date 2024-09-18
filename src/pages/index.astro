@@ -8,7 +8,7 @@ import Button from "../components/Button.astro";
 ---
 
 <MainLayout title="Forside">
-  <section class="bg-dark-green text-white pt-16 pb-16 md:px-32">
+  <section class="bg-dark-green text-white pt-16 pb-16 text-center md:text-left md:px-32">
 	<h2 class="pb-8 text-h3_m md:text-h3">Vidste du?</h2>
 	<!-- Desktop grid -->
 <div class="hidden md:grid grid-cols-7 grid-rows-3 gap-4">
@@ -38,16 +38,16 @@ import Button from "../components/Button.astro";
   
   <!-- Mobile carousel -->
   <div class="md:hidden">
-	  <div class="border-2 border-light-yellow">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</div>
+	  <div class="px-8 md:px-0 border-2 border-light-yellow">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</div>
   </div>
   
 </div>
   </section>
 
   <section class="bg-light-green text-white pt-16">
-	<div class="grid md:grid-cols-2 md:gap-4 md:pl-56 pt-16">
+	<div class="grid md:grid-cols-2 md:gap-4 pt-16 text-center md:text-left md:pl-56 space-y-4 md:space-y-0">
 	<div><h2 class="text-h3_m md:text-h3">Registrer dit bidrag</h2>
-	<p>Reducer dit CO2-udslip ved at deltage i Digital Cleanup Day! Klik på knappen til højre for at registrere dit bidrag.</p></div>
+	<p class="px-8 md:px-0">Reducer dit CO2-udslip ved at deltage i Digital Cleanup Day! Klik på knappen til højre for at registrere dit bidrag.</p></div>
 	<div class="grid justify-items-center"><button>KNAP MANGLER</button></div>
 </div>
 	<div class="grid place-content-end">
@@ -59,17 +59,17 @@ import Button from "../components/Button.astro";
 	<h2 class="text-h3_m md:text-h3 flex justify-center">Fakta om digital skraldedag</h2>
 	<img src="src/assets/index_illustrations/ring_desktop.svg" alt="ring">
 	<div class="place-items-center grid md:grid-cols-3 text-center px-16 pb-16">
-	<div>
+	<div class="pb-12 md:pb-0">
 		<img class="pb-4 pl-8" src="src/assets/index_illustrations/participates.svg" alt="people">
 		<h2 class="text-h4_m md:text-h4">1,184,747</h2>
 		<p>deltagere fra 175 forskellige lande</p>
 	</div>
-	<div>
+	<div class="pb-12 md:pb-0">
 		<img class="pb-4" src="src/assets/index_illustrations/gb.svg" alt="files">
 		<h2 class="text-h4_m md:text-h4">14.5 M GB</h2>
 		<p>data slettet</p>
 	</div>
-	<div>
+	<div class="pb-12 md:pb-0">
 		<img class="pb-4 pl-8" src="src/assets/index_illustrations/co2.svg" alt="co2">
 		<h2 class="text-h4_m md:text-h4">3,625 tons</h2>
 		<p>CO2-produktion forhindret årligt*</p>
