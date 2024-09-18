@@ -50,8 +50,11 @@ import Button from "../components/Button.astro";
 	<p class="px-8 md:px-0">Reducer dit CO2-udslip ved at deltage i Digital Cleanup Day! Klik på knappen til højre for at registrere dit bidrag.</p></div>
 	<div class="grid justify-items-center"><button>KNAP MANGLER</button></div>
 </div>
-	<div class="grid place-content-end">
-		<img class="w-48 h-48 md:w-auto md:h-auto" src="src/assets/index_illustrations/sq_right.svg" alt="squares">
+	<div class="hidden md:flex place-content-end">
+		<img src="src/assets/index_illustrations/sq_right.svg" alt="squares">
+	</div>
+	<div class="md:hidden flex place-content-end">
+		<img src="src/assets/index_illustrations/sq_right_mobile.svg" alt="squares">
 	</div>
   </section>
   
