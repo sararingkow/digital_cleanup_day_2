@@ -14,7 +14,13 @@ import Button_shareresults from "../components/Button_shareresults.astro";
 
 <MainLayout title="Sådan laver du en digital oprydning">
   <div class="top_part text-center font-sans bg-light-green pt-20 md:pt-48">
-    <Image id="circle" class="w-[32%] md:w-[26%] absolute top-[180px] left-[75px] -mt-0 -ml-0 md:top-[220px] md:left-[990px] md:-mt-0 md:-ml-0 z-10" src={circle} alt="" width={100} height={100} />
+    <img
+      src="ring_desktop.svg"
+      class="w-[32%] md:w-[26%] absolute top-[180px] left-[75px] -mt-0 -ml-0 md:top-[220px] md:left-[990px] md:-mt-0 md:-ml-0 z-10"
+      alt=""
+      width={100}
+      height={100}
+    />
 
     <div class="text-center pr-9">
       <h1 class="font-bold text-dark-green text-h1_m md:text-h1 md:mx-auto relative">
@@ -27,58 +33,86 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <h2 class="text-off-white text-h3_m md:text-h3 p-8 md:p-8">Step by step</h2>
     <!-- Pixel image container -->
     <div class="pixel1-container md:flex flex-row translate-y-15 justify-start">
-      <Image class="h-auto w-auto" src={pixel1} alt="" />
+      <img class="h-auto w-auto" src="pixel1.svg" alt="" />
     </div>
   </div>
   <div class="text_container text-dark-green grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto mt-16 max-w-6xl">
     <div class="col_1 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 1</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din telefon</h3>
-      <Image src={phone} alt="" width={90} height={90} />
-      <p class="text-brodtekst_mini pt-4 pb-2">Fjern alle de apps, du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte, gamle apps ...</p>
+      <img class="w-[90%] md:w-auto" src="phone.svg" alt="" />
+      <p class="text-brodtekst_mini pt-4 pb-2">
+        Fjern alle de apps, du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte,
+        gamle apps ...
+      </p>
       <br />
       <Button_readmore>LÆS MERE</Button_readmore>
     </div>
     <div class="col_2 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 2</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din mail-indbakke</h3>
-      <Image src={mail} alt="" width={90} height={90} />
-      <p class="text-brodtekst_mini pt-4 pb-2">Filtrér dine e-mails efter de ældste og arkivér dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste, og slet alt det andet! ...</p>
+      <img class="w-[90%] md:w-auto" src="mail.svg" alt="" />
+      <p class="text-brodtekst_mini pt-4 pb-2">
+        Filtrér dine e-mails efter de ældste og arkivér dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste, og
+        slet alt det andet! ...
+      </p>
       <br />
       <Button_readmore>LÆS MERE</Button_readmore>
     </div>
     <div class="col_3 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 3</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din computers harddrive</h3>
-      <Image src={computer} alt="" width={90} height={90} />
-      <p class="text-brodtekst_mini pt-4 pb-2">Ryd op på din personlige computer og slet filer, der er dubletter eller er blevet overflødige. Gennemgå alle dine billeder og slet dubletter og slørede billeder ...</p>
+      <img class="w-[90%] md:w-auto" src="computer.svg" alt="" />
+      <p class="text-brodtekst_mini pt-4 pb-2">
+        Ryd op på din personlige computer og slet filer, der er dubletter eller er blevet overflødige. Gennemgå alle dine billeder og slet dubletter
+        og slørede billeder ...
+      </p>
       <br />
       <Button_readmore>LÆS MERE</Button_readmore>
     </div>
     <div class="col_4 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 4</h2>
       <h3 class="text-h3_m pb-4">Ændr dine vaner</h3>
-      <Image src={papers} alt="" width={90} height={90} />
-      <p class="text-brodtekst_mini pt-4 pb-2">I stedet for at sende e-mails, brug flere co-working-steder. Stop med at sende ‘ok’ og ‘tak’ e-mails! Opbevar de vigtige filer ét sted i skyen ...</p>
+      <img class="w-[90%] md:w-auto" src="calendar.svg" alt="" />
+      <p class="text-brodtekst_mini pt-4 pb-2">
+        I stedet for at sende e-mails, brug flere co-working-steder. Stop med at sende ‘ok’ og ‘tak’ e-mails! Opbevar de vigtige filer ét sted i skyen
+        ...
+      </p>
       <br />
       <Button_readmore>LÆS MERE</Button_readmore>
     </div>
   </div>
-  <div class="shareresults_button flex justify-center p-16 hover:scale-110"><a href="/bidrag"><Button_shareresults>DEL DIT BIDRAG</Button_shareresults></a></div>
+  <div class="shareresults_button flex justify-center p-16 hover:scale-110">
+    <a href="/bidrag"><Button_shareresults>DEL DIT BIDRAG</Button_shareresults></a>
+  </div>
 
   <!-- ressourcer -->
   <section class="text-dark-green pb-20">
     <h3 class="text-h3_m pb-4 flex flex-col justify-center items-center pr-">Ressourcer</h3>
     <div class="a_container flex flex-col justify-center md:flex-row jus gap-20 text-brodtekst_mini max-w-9xl">
       <div class="a_col1 grid grid-cols-1">
-        <a href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" class="hover:text-light-yellow hover:underline underline">Retningslinjer for enkeltpersoner</a>
-        <a href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" class="hover:text-light-yellow hover:underline underline">Sådan rydder du op i din computer ...</a>
-        <a href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" class="hover:text-light-yellow hover:underline underline">Sådan rydder du op i dine e-mails</a>
+        <a href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" class="hover:text-light-yellow hover:underline underline"
+          >Retningslinjer for enkeltpersoner</a
+        >
+        <a href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" class="hover:text-light-yellow hover:underline underline"
+          >Sådan rydder du op i din computer ...</a
+        >
+        <a href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" class="hover:text-light-yellow hover:underline underline"
+          >Sådan rydder du op i dine e-mails</a
+        >
       </div>
       <div class="a_col2 grid grid-cols-1">
-        <a href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view" class="hover:text-light-yellow hover:underline underline">Sådan rydder du op i din smartphone ...</a>
-        <a href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?usp=share_link&ouid=109229434652399341618&rtpof=true&sd=true" class="hover:text-light-yellow hover:underline underline">Indsamling af deltagerdata 1</a>
-        <a href="https://docs.google.com/spreadsheets/d/1k56qMJsp3zgDhlsCngBhdjaSHP_z9TqM/edit?usp=share_link&ouid=109229434652399341618&rtpof=true&sd=true" class="hover:text-light-yellow hover:underline underline">Indsamling af deltagerdata 2</a>
+        <a href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view" class="hover:text-light-yellow hover:underline underline"
+          >Sådan rydder du op i din smartphone ...</a
+        >
+        <a
+          href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?usp=share_link&ouid=109229434652399341618&rtpof=true&sd=true"
+          class="hover:text-light-yellow hover:underline underline">Indsamling af deltagerdata 1</a
+        >
+        <a
+          href="https://docs.google.com/spreadsheets/d/1k56qMJsp3zgDhlsCngBhdjaSHP_z9TqM/edit?usp=share_link&ouid=109229434652399341618&rtpof=true&sd=true"
+          class="hover:text-light-yellow hover:underline underline">Indsamling af deltagerdata 2</a
+        >
       </div>
     </div>
   </section>
