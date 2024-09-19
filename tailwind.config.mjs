@@ -33,7 +33,12 @@ export default {
         h2_m: "2rem",
         h1_m: "3.5rem",
       },
-      plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
+      plugins: [
+        require("@tailwindcss/typography"),
+        require("@tailwindcss/forms"),
+        require("@tailwindcss/aspect-ratio"),
+        require("@tailwindcss/container-queries"),
+      ],
     },
   },
 };
