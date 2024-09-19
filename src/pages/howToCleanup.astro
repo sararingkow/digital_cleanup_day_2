@@ -14,13 +14,14 @@ import Button_shareresults from "../components/Button_shareresults.astro";
 <MainLayout title="Sådan laver du en digital oprydning">
   <div class="top_part text-center font-sans bg-light-green pt-20 md:pt-48">
     <Image
+      id="circle"
       class="w-[30%] md:w-auto absolute top-[240px] left-[45px] -mt-0 -ml-0 md:top-[280px] md:left-[1020px] md:-mt-0 md:-ml-0 z-10"
       src={circle}
       alt=""
       width={100}
       height={100}
     />
-    <h1 class="text-dark-green text-h1_m md:text-h1 md:text-center pt-14 relative">Sådan laver du en digital oprydning</h1>
+    <h1 id="top" class="text-dark-green text-h1_m md:text-h1 md:text-center pt-14 relative">Sådan laver du en digital oprydning</h1>
     <br />
     <h2 class="text-off-white text-h3_m md:text-h3 p-8 md:p-8">Step by step</h2>
     <!-- Pixel image container -->
@@ -28,7 +29,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
       <Image class="h-auto w-auto" src={pixel1} alt="" />
     </div>
   </div>
-  <div class="text_container text-dark-green grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto mt-16 max-w-6xl">
+  <div class="text_container animate__animated animate__bounceInLeft text-dark-green grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto mt-16 max-w-6xl">
     <div class="col_1 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 1</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din telefon</h3>
