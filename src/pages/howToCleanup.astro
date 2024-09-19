@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button_readmore from "../components/Button_readmore.astro";
 import { Image } from "astro:assets";
+import Footer from "../components/Footer.astro";
 import phone from "../assets/howto_illustrations/phone_final.svg";
 import mail from "../assets/howto_illustrations/envelope.svg";
 import computer from "../assets/howto_illustrations/harddrive.svg";
@@ -14,7 +15,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
 <MainLayout title="Sådan laver du en digital oprydning">
   <div class="top_part text-center font-sans bg-light-green pt-20 md:pt-48">
     <Image
-      class="w-[30%] md:w-auto absolute top-[160px] left-[45px] -mt-0 -ml-0 md:top-[170px] md:left-[1030px] md:-mt-0 md:-ml-0 z-10"
+      class="w-[30%] md:w-auto absolute top-[240px] left-[45px] -mt-0 -ml-0 md:top-[280px] md:left-[1020px] md:-mt-0 md:-ml-0 z-10"
       src={circle}
       alt=""
       width={100}
@@ -106,4 +107,5 @@ import Button_shareresults from "../components/Button_shareresults.astro";
       </div>
     </div>
   </section>
+  <Footer />
 </MainLayout>
