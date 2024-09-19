@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button_readmore from "../components/Button_readmore.astro";
 import Footer from "../components/Footer.astro";
 import Button_shareresults from "../components/Button_shareresults.astro";
+import { Image } from "astro:assets";
 ---
 
 <MainLayout title="Sådan laver du en digital oprydning">
@@ -24,14 +25,14 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <h2 class="text-off-white text-h3_m md:text-h3 p-8 md:p-8">Step by step</h2>
     <!-- Pixel image container -->
     <div class="pixel1-container md:flex flex-row translate-y-15 justify-start">
-      <img src="/public/pixel_1.svg" alt="" class="w-50 h-full" />
+      <img src="/pixel_1.svg" alt="" class="w-50 h-full" />
     </div>
   </div>
   <div class="text_container text-dark-green grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto mt-16 max-w-6xl">
     <div class="col_1 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 1</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din telefon</h3>
-      <img src="/public/phone_final.svg" alt="" width="100" height="100" />
+      <img src="/phone_final.svg" alt="" width="100" height="100" />
       <p class="text-brodtekst_mini pt-4 pb-2">
         Fjern alle de apps, du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte,
         gamle apps ...
@@ -42,7 +43,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <div class="col_2 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 2</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din mail-indbakke</h3>
-      <img src="/public/envelope.svg" alt="" width="100" height="100" />
+      <img src="/envelope.svg" alt="" width="100" height="100" />
       <p class="text-brodtekst_mini pt-4 pb-2">
         Filtrér dine e-mails efter de ældste og arkivér dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste, og
         slet alt det andet! ...
@@ -53,7 +54,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <div class="col_3 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 3</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din computers harddrive</h3>
-      <img src="/public/harddrive.svg" alt="" width="100" height="100" />
+      <img src="/harddrive.svg" alt="" width="100" height="100" />
       <p class="text-brodtekst_mini pt-4 pb-2">
         Ryd op på din personlige computer og slet filer, der er dubletter eller er blevet overflødige. Gennemgå alle dine billeder og slet dubletter
         og slørede billeder ...
@@ -64,7 +65,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <div class="col_4 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 4</h2>
       <h3 class="text-h3_m pb-4">Ændr dine vaner</h3>
-      <img src="/public/paper_stack.svg" alt="" width="100" height="100" />
+      <img src="/paper_stack.svg" alt="" width="100" height="100" />
       <p class="text-brodtekst_mini pt-4 pb-2">
         I stedet for at sende e-mails, brug flere co-working-steder. Stop med at sende ‘ok’ og ‘tak’ e-mails! Opbevar de vigtige filer ét sted i skyen
         ...
