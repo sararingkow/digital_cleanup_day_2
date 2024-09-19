@@ -23,26 +23,13 @@ import Button_shareresults from "../components/Button_shareresults.astro";
 
       <button id="burgermenu" class="lg:hidden text-white" x-on:click="showmenu = ! showmenu">
         <!-- Burger Icon (3 lines) -->
-        <svg
-          x-show="!showmenu"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-9 transition-transform duration-300"
-        >
+        <svg x-show="!showmenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 transition-transform duration-300">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
         </svg>
       </button>
     </div>
 
-    <nav
-      id="mobilmenu"
-      class="pb-20 w-full fixed top-0 left-0 flex flex-col content-center text-white text-menu z-40 bg-light-green"
-      x-show="showmenu"
-      x-transition
-    >
+    <nav id="mobilmenu" class="pb-20 w-full fixed top-0 left-0 flex flex-col content-center text-white text-menu z-80 bg-light-green" x-show="showmenu" x-transition>
       <!-- Close Icon (X) in the corner -->
       <button class="absolute top-8 right-4" x-on:click="showmenu = false">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9">
