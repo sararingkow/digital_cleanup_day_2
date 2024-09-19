@@ -1,0 +1,19 @@
+---
+const { variant = "primary", size = "small" } = Astro.props;
+
+const buttonStyling = "bg-dark-green text-off-white hover:bg-light-yellow hover:text-dark-green active:bg-dark-yellow active:text-off-white font-bold py-3 px-8 transition duration-300";
+
+const variantClasses = {
+  primary: "bg-dark-green text-off-white hover:bg-light-yellow hover:text-dark-green active:bg-dark-yellow active:text-off-white font-bold py-3 px-8 transition duration-300",
+};
+
+const sizeClasses = {
+  small: "text-sm",
+  medium: "text-md",
+  large: "text-lg",
+};
+---
+
+<div>
+  <button class={`${buttonStyling} ${variantClasses[variant]} ${sizeClasses[size]}`}><slot /></button>
+</div>
