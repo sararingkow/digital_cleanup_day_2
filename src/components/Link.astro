@@ -1,5 +1,20 @@
 ---
-// Henter parametrene fra Astro.props
-const { href="#", target="_self"} = Astro.props; 
+const { href = "#", target = "_self", variant = "textlink", size = "standart" } = Astro.props;
+
+const linkStyling = "";
+
+const variantClasses = {
+  textlink: "underline",
+  primary: "bg-sky-500 inline-block hover:bg-sky-800",
+  secondary: "bg-green-500 inline-block",
+};
+
+const sizeClasses = {
+  standart: "",
+  small: "text-4xl",
+  medium: "text-2xl",
+  large: "text-l",
+};
 ---
-<a href={href} class="underline" target={target}><slot /></a>
+
+<a href={href} target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}><slot /></a>
