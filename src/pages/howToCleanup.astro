@@ -2,13 +2,6 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button_readmore from "../components/Button_readmore.astro";
 import Footer from "../components/Footer.astro";
-import { Image } from "astro:assets";
-import phone from "../assets/howto_illustrations/phone_final.svg";
-import mail from "../assets/howto_illustrations/envelope.svg";
-import computer from "../assets/howto_illustrations/harddrive.svg";
-import papers from "../assets/howto_illustrations/paper_stack.svg";
-import pixel1 from "../assets/howto_illustrations/pixel_1.svg";
-import circle from "../assets/howto_illustrations/circle.svg";
 import Button_shareresults from "../components/Button_shareresults.astro";
 ---
 
@@ -18,8 +11,6 @@ import Button_shareresults from "../components/Button_shareresults.astro";
       src="ring_desktop.svg"
       class="w-[32%] md:w-[26%] absolute top-[180px] left-[75px] -mt-0 -ml-0 md:top-[220px] md:left-[990px] md:-mt-0 md:-ml-0 z-10"
       alt=""
-      width={100}
-      height={100}
     />
 
     <div class="text-center pr-9">
@@ -33,14 +24,14 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <h2 class="text-off-white text-h3_m md:text-h3 p-8 md:p-8">Step by step</h2>
     <!-- Pixel image container -->
     <div class="pixel1-container md:flex flex-row translate-y-15 justify-start">
-      <img class="h-auto w-auto" src="pixel1.svg" alt="" />
+      <img src="pixel1.svg" class="h-auto w-auto" alt="" />
     </div>
   </div>
   <div class="text_container text-dark-green grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto mt-16 max-w-6xl">
     <div class="col_1 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 1</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din telefon</h3>
-      <img class="w-[90%] md:w-auto" src="phone.svg" alt="" />
+      <img src="phone.svg" class="w-[90%] md:w-auto" alt="" />
       <p class="text-brodtekst_mini pt-4 pb-2">
         Fjern alle de apps, du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte,
         gamle apps ...
@@ -51,7 +42,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <div class="col_2 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 2</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din mail-indbakke</h3>
-      <img class="w-[90%] md:w-auto" src="mail.svg" alt="" />
+      <img src="mail.svg" class="w-[90%] md:w-auto" alt="" />
       <p class="text-brodtekst_mini pt-4 pb-2">
         Filtrér dine e-mails efter de ældste og arkivér dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste, og
         slet alt det andet! ...
@@ -62,7 +53,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <div class="col_3 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 3</h2>
       <h3 class="text-h3_m pb-4">Ryd op i din computers harddrive</h3>
-      <img class="w-[90%] md:w-auto" src="computer.svg" alt="" />
+      <img src="computer.svg" class="w-[90%] md:w-auto" alt="" />
       <p class="text-brodtekst_mini pt-4 pb-2">
         Ryd op på din personlige computer og slet filer, der er dubletter eller er blevet overflødige. Gennemgå alle dine billeder og slet dubletter
         og slørede billeder ...
@@ -73,7 +64,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <div class="col_4 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 4</h2>
       <h3 class="text-h3_m pb-4">Ændr dine vaner</h3>
-      <img class="w-[90%] md:w-auto" src="calendar.svg" alt="" />
+      <img src="calendar.svg" class="w-[90%] md:w-auto" alt="" />
       <p class="text-brodtekst_mini pt-4 pb-2">
         I stedet for at sende e-mails, brug flere co-working-steder. Stop med at sende ‘ok’ og ‘tak’ e-mails! Opbevar de vigtige filer ét sted i skyen
         ...
