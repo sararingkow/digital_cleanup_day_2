@@ -17,7 +17,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     <div class="flex items-center gap-4">
       <a href="/bidrag"
         ><div id="desktop-button" class="shareresults_button md:flex justify-center p-16 hidden lg:block">
-          <Button_shareresults>Del dit bidrag</Button_shareresults>
+          <Button_shareresults>DEL DIT BIDRAG</Button_shareresults>
         </div>
 
         <button id="burgermenu" class="lg:hidden text-white" x-on:click="showmenu = ! showmenu">
@@ -28,7 +28,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
       </a>
     </div>
 
-    <nav id="mobilmenu" class="flex flex-col pb-20 content-center text-white text-menu" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+    <nav id="mobilmenu" class="flex flex-col pb-20 content-center text-white text-menu z-40" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
       <ul>
         <li class="text-center py-2 border-b-2 hover:text-light-yellow"><a href="/#">Forside</a></li>
         <li class="text-center py-2 border-b-2 hover:text-light-yellow"><a href="howToCleanup">Sådan gør du</a></li>
