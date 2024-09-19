@@ -25,14 +25,6 @@ import Footer from "../components/Footer.astro";
       </h3>
     </div>
   </div>
-  <div class="flex flex-row pt-5 pb-10 gap-10">
-    <div class="pt-10 text-center shareresults_button">
-      <ButtonGreen>GEM DATOEN</ButtonGreen>
-    </div>
-    <div class="pt-10 text-center shareresults_button">
-      <ButtonGreen>DEL MED EN VEN</ButtonGreen>
-    </div>
-  </div>
   <div class="hidden md:flex flex-row justify-between w-full">
     <div>
       <img src="src/assets/index_illustrations/sq_hero_left.svg" alt="pic1" />
@@ -51,124 +43,7 @@ import Footer from "../components/Footer.astro";
   </div>
 </section>
 
-<!-- <section class="flex justify-center items-center md:p-10">
-    <div class="bg-dark-green p-10">
-      <div class="max-w-md w-full">
-        <div class="text-center mb-8">
-          <h3 class="text-off-white text-h3_m md:text-h3">STEP 1/2</h3>
-          <p class="text-off-white text-p_m md:text-p">Udfyld dine kontaktinformationer</p>
-        </div>
-
-        <div class="bg-dark-green pb-20">
-          <div class="grid grid-cols-1 gap-6">
-            <label class="block">
-              <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Fulde navn" />
-            </label>
-
-            <label class="block">
-              <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Email" />
-            </label>
-
-            <label class="block">
-              <select class="block bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 text-light-green">
-                <option class="text-light-green">Land</option>
-                <option class="text-off-white">Danmark</option>
-                <option class="text-off-white">Norge</option>
-                <option class="text-off-white">Sverige</option>
-              </select>
-            </label>
-
-            <label class="block">
-              <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Antal deltagere" />
-            </label>
-
-            <label class="block">
-              <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Antal GB slettet" />
-            </label>
-
-            <div class="block">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center w-full">
-                    <input type="checkbox" class="w-5 h-5 rounded-sm border-off-white text-light-green focus:border-light-green focus:ring-light-green" />
-                    <span class="pl-5 pt-3 text-xs text-light-green pb-5">*Jeg accepterer Let's Do It, World vilkår og betingelser</span>
-                  </label>
-
-                  <label class="inline-flex items-center w-full">
-                    <input type="checkbox" class="w-5 h-5 rounded-sm border-off-white text-light-green focus:border-light-green focus:ring-light-green" />
-                    <span class="pl-5 pt-3 text-xs text-light-green pb-5">Jeg vil gerne tilmelde mig nyheder fra World Cleanup Day</span>
-                  </label>
-                </div>
-              </div>
-              <div class="pt-10 text-center">
-                <button class="bg-light-green text-dark-green py-2 px-4 rounded">Knap</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="flex justify-center items-center md:p-10">
-    <div class="bg-dark-green p-10">
-      <div class="max-w-md w-full">
-        <div class="text-center mb-8">
-          <h3 class="text-off-white text-h3_m md:text-h3">STEP 2/2</h3>
-          <p class="text-off-white text-p_m md:text-p">Udfyld din digitale oprydning</p>
-        </div>
-
-        <div class="bg-dark-green pb-20">
-          <div class="grid grid-cols-1 gap-6">
-            <label class="block">
-              <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Fulde navn" />
-            </label>
-
-            <label class="block">
-              <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Email" />
-            </label>
-
-            <label class="block">
-              <select class="block bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 text-light-green">
-                <option class="text-light-green">Land</option>
-                <option class="text-off-white">Danmark</option>
-                <option class="text-off-white">Norge</option>
-                <option class="text-off-white">Sverige</option>
-              </select>
-            </label>
-
-            <label class="block">
-              <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Antal deltagere" />
-            </label>
-
-            <label class="block">
-              <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Antal GB slettet" />
-            </label>
-
-            <div class="block">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center w-full">
-                    <input type="checkbox" class="w-5 h-5 rounded-sm border-off-white text-light-green focus:border-light-green focus:ring-light-green" />
-                    <span class="pl-5 pt-3 text-xs text-light-green pb-5">*Jeg accepterer Let's Do It, World vilkår og betingelser</span>
-                  </label>
-
-                  <label class="inline-flex items-center w-full">
-                    <input type="checkbox" class="w-5 h-5 rounded-sm border-off-white text-light-green focus:border-light-green focus:ring-light-green" />
-                    <span class="pl-5 pt-3 text-xs text-light-green pb-5">Jeg vil gerne tilmelde mig nyheder fra World Cleanup Day</span>
-                  </label>
-                </div>
-              </div>
-              <div class="pt-10 text-center">
-                <button class="bg-light-green text-dark-green py-2 px-4 rounded">Knap</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-<div class="bg-gray-100 md:pt-10">
+<div class="bg-gray-100 md:pt-10 pb-40">
   <!-- Container for Sections -->
   <div id="form-container" class="flex flex-col justify-center items-center container">
     <!-- Step 1/2 Section -->
