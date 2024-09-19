@@ -9,44 +9,35 @@ import Button from "../components/Button.astro";
 
 <MainLayout title="Forside">
   <section class="bg-dark-green text-white pt-16 pb-16 text-center md:text-left md:px-32">
-	<h2 class="pb-8 text-h3_m md:text-h3">Vidste du?</h2>
+	<h2 class="pb-8 text-h2_m md:text-h2">Vidste du?</h2>
 	<!-- Desktop grid -->
-<div class="hidden md:grid grid-cols-7 grid-rows-3 gap-4">
-	<div class="p-4 col-span-2 row-span-1 border-2 border-light-yellow">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</div>
-	<div class="p-4 col-span-3 row-span-1 border-2 border-white">I 2022 blev omkring 70 millioner servere brugt til at 
-		lagre data. Hver enkelt forårsagede produktionen af 
-		1-2 tons CO2. I det år blev omkring 20 millioner af 
-		dem til elektronisk affald. (a)</div>
-	<div class="p-4 col-span-2 row-span-1 border-2 border-white">Internettet producerer mere 
-		end 900 millioner tons CO2 hvert år! (a), (b), (c), (d)</div>
-	<div class="p-4 col-span-1 row-span-2 border-2 border-light-yellow">Den grænseløse forbrug af data i dag 
-		kræver 3 gange mere energi end alle de solpaneler, verden kan producere! (a)</div>
-	<div class="p-4 col-span-2 row-span-1 border-2 border-white">99 % af al data blev skabt inden for de sidste 10 år. (a)</div>
-	<div class="p-4 col-span-4 row-span-1 border-2 border-light-yellow">På blot ét år (2007) blev der skabt én zettabyte data verden over. I 2010 var 
-		dette tal fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at 
-		printe én zettabyte data ville man have brug for papir fra 20 billioner træer. 
-		Der er kun omkring 3,5 billioner træer tilbage på planeten, så det er ikke 
-		muligt. (a), (b)</div>
-	<div class="p-4 col-span-4 row-span-1 border-2 border-light-yellow">90 % af alle data bliver aldrig tilgået 3 måneder
-		efter, at de er blevet lagret. (a)</div>
-		<div class="p-4 col-span-2 row-span-1 border-2 border-white">91 % af websider får ingen trafik fra Google. (a)</div>
-	<div class="p-4 col-span-5 row-span-1 border-2 border-white">En e-mail udleder i gennemsnit 4 g CO2 = det samme som kulstofaftrykket fra en lyspære tændt i 6 
-		minutter! (a), (b), (c)</div>
-	<div class="p-4 col-span-2 row-span-1.5 border-2 border-light-yellow">320 milliarder e-mails sendes hver dag, og 62 billioner spam-mails sendes 
-		hvert år = 20 millioner tons CO2! (a), (b)</div>
-  </div>
-  
-  <!-- Mobile carousel -->
-  <div class="md:hidden">
-	  <div class="px-8 md:px-0 border-2 border-light-yellow">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</div>
-  </div>
+<div class="grid grid-cols-1 grid-rows-4 gap-6 px-8 md:px-0 md:grid-cols-5 md:grid-rows-2 md:gap-4">
+	<div class="p-4 md:col-span-2 md:row-span-1 border-2 border-light-yellow">
+		<h3 class="text-h4_m md:text-h4">Det kræver mere energi...</h2>
+		<p class="text-base">... at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</p>
+	  </div>
+	  <div class="p-4 md:col-span-3 md:row-span-1 border-2 border-white">
+		<h3 class="text-h4_m md:text-h4">1 e-mail udleder...</h2>
+		<p class="text-base">i gennemsnit 4 g CO2 = det samme som kulstofaftrykket fra en lyspære tændt i 6 
+			minutter! (a), (b), (c)</p>
+	  </div>
+	  <div class="p-4 md:col-span-3 md:row-span-1 border-2 border-white">
+		<h3 class="text-h4_m md:text-h4">Internettet producerer mere end...</h2>
+		<p class="text-base">... 900 millioner tons CO2 hvert år! (a), (b), (c), (d)</p>
+	  </div>
+	  <div class="p-4 md:col-span-2 md:row-span-1 border-2 border-light-yellow">
+		<h3 class="text-h4_m md:text-h4">99 % af al data...</h2>
+		<p class="text-base">... blev skabt inden for de sidste 10 år. (a)</p>
+	  </div>
+</div>
+  <div class="px-8 md:px-0 text-brodtekst_mini_m md:text-brodtekst_mini pt-8 pb-6">Kilder: (a) International Energy Agency; (b) “Bitcoin Tracking To Consume More Energy Than NZ” – Energetics; (c) Powering the Internet: Your Virtual Carbon Footprint – WebFX; (d) Energuide.be;</div>
   
 </div>
   </section>
 
   <section class="bg-light-green text-white pt-16">
 	<div class="grid md:grid-cols-2 md:gap-4 pt-16 text-center md:text-left md:pl-56 space-y-4 md:space-y-0">
-	<div><h2 class="text-h3_m md:text-h3">Registrer dit bidrag</h2>
+	<div><h2 class="text-h2_m md:text-h2">Registrer dit bidrag</h2>
 	<p class="px-8 md:px-0">Reducer dit CO2-udslip ved at deltage i Digital Cleanup Day! Klik på knappen til højre for at registrere dit bidrag.</p></div>
 	<div class="grid justify-items-center"><button>KNAP MANGLER</button></div>
 </div>
@@ -59,8 +50,8 @@ import Button from "../components/Button.astro";
   </section>
   
   <section class="bg-off-white text-dark-green pt-16">
-	<h2 class="text-h3_m md:text-h3 flex justify-center">Fakta om digital skraldedag</h2>
-	<img src="src/assets/index_illustrations/ring_desktop.svg" alt="ring">
+	<img class="w-[25%] md:w-auto absolute top-[1325px] left-[80px] -mt-0 -ml-0 md:top-[1325px] md:left-[400px] md:-mt-0 md:-ml-0 z-10" src="src/assets/index_illustrations/ring_desktop.svg" alt="ring">
+	<h2 class="pb-12 text-h2_m md:text-h2 flex justify-center relative">Fakta om digital skraldedag</h2>
 	<div class="place-items-center grid md:grid-cols-3 text-center px-16 pb-16">
 	<div class="pb-12 md:pb-0">
 		<img class="pb-4 pl-8" src="src/assets/index_illustrations/participates.svg" alt="people">
@@ -78,7 +69,7 @@ import Button from "../components/Button.astro";
 		<p>CO2-produktion forhindret årligt*</p>
 	</div>
 </div>
-	<div class="px-16 pb-16">*For beregningerne af digitalt affald bruger vi de gennemsnitlige CO2-udledningsdata fra International Energy Agency, ifølge hvilke 4 GB data, der opbevares på servere og andre datalagringsenheder i ét år, forbruger 2 kWh energi og producerer 1 kg CO2.</div>
+	<div class="md:px-[8rem] px-16 pb-16">*For beregningerne af digitalt affald bruger vi de gennemsnitlige CO2-udledningsdata fra International Energy Agency, ifølge hvilke 4 GB data, der opbevares på servere og andre datalagringsenheder i ét år, forbruger 2 kWh energi og producerer 1 kg CO2.</div>
   </section>
 
 </MainLayout>
