@@ -4,6 +4,7 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import Footer from "../components/Footer.astro";
 import Button_shareresults from "../components/Button_shareresults.astro";
+import ButtonGreen from "../components/ButtonGreen.astro";
 ---
 
 <MainLayout title="Forside" />
@@ -23,7 +24,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
             <span class="block sm:inline">skraldedag</span>
           </h1>
         </div>
-        <div class="shareresults_button block md:hidden pt-5 pb-10"><Button_shareresults>Del dit bidrag</Button_shareresults></div>
+        <div class="shareresults_button block md:hidden pt-5 pb-10"><Button_shareresults>DEL DEI BIDRAG</Button_shareresults></div>
 
         <div class="text-center">
           <h3 class="text-off-white text-h3_m md:text-h3 sm:mx-auto">
@@ -32,8 +33,12 @@ import Button_shareresults from "../components/Button_shareresults.astro";
           </h3>
         </div>
         <div class="flex flex-row pt-5 pb-10 gap-10">
-          <button>Knap 1</button>
-          <button>Knap 2</button>
+          <div class="pt-10 text-center shareresults_button">
+            <ButtonGreen>GEM DATOEN</ButtonGreen>
+          </div>
+          <div class="pt-10 text-center shareresults_button">
+            <ButtonGreen>DEL MED EN VEN</ButtonGreen>
+          </div>
         </div>
       </div>
     </div>
@@ -143,12 +148,12 @@ import Button_shareresults from "../components/Button_shareresults.astro";
     </div>
     <div class="grid justify-items-center shareresults_button"><Button_shareresults>DEL DIT BIDRAG</Button_shareresults></div>
   </div>
-<div class="hidden md:flex place-content-end">
-  <img src="src/assets/index_illustrations/sq_right.svg" alt="squares" />
-</div>
-<div class="md:hidden flex place-content-end">
-  <img src="src/assets/index_illustrations/sq_right_mobile.svg" alt="squares" />
-</div>
+  <div class="hidden md:flex place-content-end">
+    <img src="src/assets/index_illustrations/sq_right.svg" alt="squares" />
+  </div>
+  <div class="md:hidden flex place-content-end">
+    <img src="src/assets/index_illustrations/sq_right_mobile.svg" alt="squares" />
+  </div>
 </section>
 
 <section class="bg-off-white text-dark-green pt-16 pb-16">
