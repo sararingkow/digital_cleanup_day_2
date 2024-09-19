@@ -1,5 +1,5 @@
 ---
-
+import Button_shareresults from "../components/Button_shareresults.astro";
 ---
 
 <div x-data="{ showmenu: false }" class="p-4 fixed lg:fixed w-full bg-light-green">
@@ -13,25 +13,30 @@
         <a href="howToCleanup" class="hover:underline hover:text-light-yellow">Sådan gør du</a>
       </nav>
     </div>
+
     <div class="flex items-center gap-4">
-      <a href="/bidrag"><button id="desktop-button" class="hidden lg:block">Knap her</button></a>
-      <button id="burgermenu" class="lg:hidden text-white" x-on:click="showmenu = ! showmenu">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-        </svg>
-      </button>
+      <a href="/bidrag"
+        ><div id="desktop-button" class="shareresults_button md:flex justify-center p-16 hidden lg:block">
+          <Button_shareresults>Del dit bidrag</Button_shareresults>
+        </div>
+
+        <button id="burgermenu" class="lg:hidden text-white" x-on:click="showmenu = ! showmenu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+          </svg>
+        </button>
+      </a>
     </div>
+
+    <nav id="mobilmenu" class="flex flex-col pb-20 content-center text-white text-menu" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+      <ul>
+        <li class="text-center py-2 border-b-2 hover:text-light-yellow"><a href="/#">Forside</a></li>
+        <li class="text-center py-2 border-b-2 hover:text-light-yellow"><a href="howToCleanup">Sådan gør du</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <nav id="mobilmenu" class="flex flex-col pb-20 content-center text-white text-menu" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-    <ul>
-      <li class="text-center py-2 border-b-2 hover:text-light-yellow"><a href="/#">Forside</a></li>
-      <li class="text-center py-2 border-b-2 hover:text-light-yellow"><a href="howToCleanup">Sådan gør du</a></li>
-    </ul>
-  </nav>
-</div>
-
-<!-- <main>
+  <!-- <main>
   <section class="bg-light-green">
     <div class="grid grid-cols-5">
   
@@ -137,3 +142,4 @@
     </div>
   </section>
 </main> -->
+</div>
