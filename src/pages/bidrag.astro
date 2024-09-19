@@ -27,10 +27,10 @@ import Footer from "../components/Footer.astro";
   </div>
   <div class="hidden md:flex flex-row justify-between w-full">
     <div>
-      <img src="sq_hero_left.svg" alt="pic1" />
+      <img src="/sq_hero_left.svg" alt="pic1" />
     </div>
     <div>
-      <img src="sq_hero_right.svg" alt="pic1" />
+      <img src="/sq_hero_right.svg" alt="pic1" />
     </div>
   </div>
   <div class="flex flex-row justify-between w-full md:hidden">
@@ -57,15 +57,28 @@ import Footer from "../components/Footer.astro";
         <div class="bg-dark-green pb-10">
           <div class="grid grid-cols-1 gap-6">
             <label class="block">
-              <input type="text" id="full-name" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Fulde navn" />
+              <input
+                type="text"
+                id="full-name"
+                class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white"
+                placeholder="Fulde navn"
+              />
             </label>
 
             <label class="block">
-              <input type="text" id="email" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Email" />
+              <input
+                type="text"
+                id="email"
+                class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white"
+                placeholder="Email"
+              />
             </label>
 
             <label class="block">
-              <select id="country" class="block bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 text-light-green">
+              <select
+                id="country"
+                class="block bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 text-light-green"
+              >
                 <option class="text-light-green">Land</option>
                 <option class="text-off-white">Danmark</option>
                 <option class="text-off-white">Norge</option>
@@ -76,23 +89,37 @@ import Footer from "../components/Footer.astro";
             <!-- Additional fields initially hidden -->
             <div id="additional-fields" class="hidden">
               <label class="block">
-                <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white" placeholder="Antal deltagere" />
+                <input
+                  type="text"
+                  class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 placeholder-light-green text-off-white"
+                  placeholder="Antal deltagere"
+                />
               </label>
 
               <label class="block">
-                <input type="text" class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 pt-5 placeholder-light-green text-off-white" placeholder="Antal GB slettet" />
+                <input
+                  type="text"
+                  class="bg-dark-green w-full px-0.5 border-0 border-b border-off-white focus:ring-0 focus:border-light-green pb-3 pt-5 placeholder-light-green text-off-white"
+                  placeholder="Antal GB slettet"
+                />
               </label>
 
               <div class="block">
                 <div class="mt-8">
                   <div>
                     <label class="inline-flex items-center w-full">
-                      <input type="checkbox" class="w-5 h-5 rounded-sm border-off-white text-light-green focus:border-light-green focus:ring-light-green" />
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded-sm border-off-white text-light-green focus:border-light-green focus:ring-light-green"
+                      />
                       <span class="pl-5 pt-3 text-xs text-light-green pb-5">*Jeg accepterer Let's Do It, World vilkår og betingelser</span>
                     </label>
 
                     <label class="inline-flex items-center w-full">
-                      <input type="checkbox" class="w-5 h-5 rounded-sm border-off-white text-light-green focus:border-light-green focus:ring-light-green" />
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded-sm border-off-white text-light-green focus:border-light-green focus:ring-light-green"
+                      />
                       <span class="pl-5 pt-3 text-xs text-light-green pb-5">Jeg vil gerne tilmelde mig nyheder fra World Cleanup Day</span>
                     </label>
                   </div>
