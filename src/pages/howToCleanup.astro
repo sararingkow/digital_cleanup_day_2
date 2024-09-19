@@ -13,10 +13,16 @@ import Button_shareresults from "../components/Button_shareresults.astro";
 
 <MainLayout title="Sådan laver du en digital oprydning">
   <div class="top_part text-center font-sans bg-light-green pt-18 md:pt-20">
-    <span class="top-70 left-70"><Image class="h-auto w-auto" src={circle} alt="" width={100} height={100} /> </span>
-    <h1 class="text-dark-green text-5xl md:text-h1 md:text-center pt-14">Sådan laver du en digital oprydning</h1>
+    <Image
+      class="w-[30%] md:w-auto absolute top-[160px] left-[45px] -mt-0 -ml-0 md:top-[170px] md:left-[1030px] md:-mt-0 md:-ml-0 z-10"
+      src={circle}
+      alt=""
+      width={100}
+      height={100}
+    />
+    <h1 class="text-dark-green text-h1_m md:text-h1 md:text-center pt-14 relative">Sådan laver du en digital oprydning</h1>
     <br />
-    <h2 class="text-off-white text-h2_m md:text-4xl p-8 md:p-8">Step by step</h2>
+    <h2 class="text-off-white text-4xl md:text-h2_m p-8 md:p-8">Step by step</h2>
     <!-- Pixel image container -->
     <div class="pixel1-container md:flex flex-row translate-y-15 justify-start">
       <Image class="h-auto w-auto" src={pixel1} alt="" />
@@ -32,7 +38,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
         gamle apps ...
       </p>
       <br />
-      <Button_readmore>Læs mere</Button_readmore>
+      <Button_readmore>LÆS MERE</Button_readmore>
     </div>
     <div class="col_2 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 2</h2>
@@ -43,7 +49,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
         slet alt det andet! ...
       </p>
       <br />
-      <Button_readmore>Læs mere</Button_readmore>
+      <Button_readmore>LÆS MERE</Button_readmore>
     </div>
     <div class="col_3 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 3</h2>
@@ -54,7 +60,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
         og slørede billeder ...
       </p>
       <br />
-      <Button_readmore>Læs mere</Button_readmore>
+      <Button_readmore>LÆS MERE</Button_readmore>
     </div>
     <div class="col_4 mx-16 mb-10">
       <h2 class="text-h2_m">STEP 4</h2>
@@ -65,21 +71,21 @@ import Button_shareresults from "../components/Button_shareresults.astro";
         ...
       </p>
       <br />
-      <Button_readmore>Læs mere</Button_readmore>
+      <Button_readmore>LÆS MERE</Button_readmore>
     </div>
   </div>
-  <div class="shareresults_button flex justify-center p-16"><Button_shareresults>Del dit bidrag</Button_shareresults></div>
+  <div class="shareresults_button flex justify-center p-16"><Button_shareresults>DEL DIT BIDRAG</Button_shareresults></div>
 
   <!-- ressourcer -->
   <section class="text-dark-green m-20">
-    <h3 class="text-h3_m pb-4 pl-72">Ressourcer</h3>
-    <div class="a_container flex flex-col justify-center md:flex-row jus gap-10 max-w-7xl">
+    <h3 class="text-h3_m pb-4 pl-0 md:pl-72">Ressourcer</h3>
+    <div class="a_container flex flex-col justify-center md:flex-row jus gap-10 text-sm max-w-7xl">
       <div class="a_col1 grid grid-cols-1">
         <a href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" class="hover:text-light-yellow hover:underline"
           >Retningslinjer for enkeltpersoner</a
         >
         <a href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" class="hover:text-light-yellow hover:underline"
-          >Sådan rydder du op i din computer og i Drive</a
+          >Sådan rydder du op i din computer ...</a
         >
         <a href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" class="hover:text-light-yellow hover:underline"
           >Sådan rydder du op i dine e-mails</a
@@ -87,7 +93,7 @@ import Button_shareresults from "../components/Button_shareresults.astro";
       </div>
       <div class="a_col2 grid grid-cols-1">
         <a href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view" class="hover:text-light-yellow hover:underline"
-          >Sådan rydder du op i din smartphone og tablet</a
+          >Sådan rydder du op i din smartphone ...</a
         >
         <a
           href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?usp=share_link&ouid=109229434652399341618&rtpof=true&sd=true"
