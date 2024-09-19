@@ -6,38 +6,45 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 
-<!-- <h1 class="font-bold text-h1 bg-light-green">ugiugiuguigouig</h1>
-<h2 class="text-h2">h2</h2> -->
 <MainLayout title="Forside" />
 <main>
   <section class="bg-light-green">
-    <div class="absolute top-80 right-50 ml-48">
-      <img src="src/assets/index_illustrations/snor.svg" alt="pic1" class="w-full max-w-lg h-auto" />
+    <div class="grid grid-cols-5">
+      <!-- First div with the image aligned to the right -->
+      <div class="col-span-1 hidden lg:flex justify-end pt-10 lg:pt-64">
+        <img src="src/assets/index_illustrations/snor_new_l.svg" alt="pic1" class="w-56 h-auto" />
+      </div>
+
+      <!-- Second div spanning columns 2, 3, and 4 -->
+      <div class="col-span-5 md:col-span-3">
+        <div class="flex flex-col justify-center items-center pt-24 md:pt-48">
+          <div class="text-center pr-9">
+            <h1 class="font-bold text-dark-green text-h1_m md:text-h1 md:mx-auto">
+              <span class="block sm:inline">Digital</span>
+              <span class="block sm:inline">skraldedag</span>
+            </h1>
+          </div>
+
+          <div class="block md:hidden pt-5 pb-10">
+            <button class="p-2 bg-blue-500 text-white rounded">Show only on mobile</button>
+          </div>
+          <div class="text-center">
+            <h3 class="text-off-white text-h3_m md:text-h3 sm:mx-auto">
+              <span class="block sm:inline">Ryd op i dit digitale affald</span>
+              <span class="block sm:inline">d. 15. marts 2025</span>
+            </h3>
+          </div>
+          <div class="flex flex-row pt-5 pb-10 gap-10">
+            <button>Knap 1</button>
+            <button>Knap 2</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex flex-col justify-center items-center pt-24 md:pt-48">
-      <div class="text-center">
-        <h1 class="font-bold text-dark-green text-h1_m md:text-h1 sm:mx-auto">
-          <span class="block sm:inline">Digital</span>
-          <span class="block sm:inline">skraldedag</span>
-        </h1>
-      </div>
-      <div class="block md:hidden pt-5 pb-10">
-        <button class="p-2 bg-blue-500 text-white rounded">Show only on mobile</button>
-      </div>
-      <div class="text-center">
-        <h3 class="text-off-white text-h3_m md:text-h3 sm:mx-auto">
-          <span class="block sm:inline">Ryd op i dit digitale affald</span>
-          <span class="block sm:inline">d. 15. marts 2025</span>
-        </h3>
-      </div>
-      <div class="flex flex-row pt-5 pb-10 gap-10">
-        <button>Knap 1</button>
-        <button>Knap 2</button>
-      </div>
-    </div>
+
     <div class="hidden md:flex flex-row justify-between w-full">
       <div>
-        <img src="src/assets/index_illustrations/sq_hero_left.svg" alt="pic1" />
+        <img src="src/assets/index_illustrations/sq_hero_l_new.svg" alt="pic1" />
       </div>
       <div>
         <img src="src/assets/index_illustrations/sq_hero_right.svg" alt="pic1" />
